@@ -77,9 +77,9 @@ $ popd
 
 ## Supported runtimes
 
-[x] python3.7, python3.8, python3.9, python3.10
-[] TODO: nodejs12.x, nodejs14.x, nodejs16.x, nodejs18.x
-[] TODO: java8, java8.al2, java11, java17
-[] TODO: dotnet5.0, dotnet6, dotnet7, dotnetcore3.1
-[] TODO: go1.x
-[] TODO: ruby2.7
+[x] python3.7, python3.8, python3.9, python3.10<br>
+[] TODO: nodejs12.x, nodejs14.x, nodejs16.x, nodejs18.x<br>
+[] TODO: java8, java8.al2, java11, java17<br>
+[] TODO: dotnet5.0, dotnet6, dotnet7, dotnetcore3.1<br>
+[] TODO: go1.x<br>
+[] TODO: ruby2.7<br>
