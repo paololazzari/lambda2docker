@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 
 setup(
     name="lambda2docker",
-    version="0.1.0",
+    version="0.1.1",
     description=("Generate a Dockerfile from a lambda function"),
     keywords="aws, lambda, docker",
     author="paololazzari",
