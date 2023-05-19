@@ -1,0 +1,6 @@
+.vscode/
+**/*.zip
+**/*.egg-info/
+**/*__pycache__/
+**/*package
+**/*layerpackage

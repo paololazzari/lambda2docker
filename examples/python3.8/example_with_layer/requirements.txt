@@ -1,0 +1,4 @@
+asyncio==3.4.3
+boto3==1.26.133
+pyparsing==3.0.9
+jellyfish==0.11.2

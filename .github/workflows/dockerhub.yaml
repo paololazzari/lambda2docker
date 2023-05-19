@@ -1,0 +1,27 @@
+name: Push to dockerhub
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build and publish image
+        run: |
+          # Login dockerhub
+          pwd="${{ secrets.dockerhub }}"
+          docker login -u="plazzari" -p="${pwd}"
+
+          # Get version
+          VERSION=$(awk -F"=" '/version/ {gsub("[\",]","", $0); print $2}' setup.py)
+
+          # Build docker images
+          docker build . --tag "plazzari/lambda2docker:${VERSION}"
+          docker tag "plazzari/lambda2docker:${VERSION}" plazzari/lambda2docker:latest
+
+          # Deploy docker images
+          docker push "plazzari/lambda2docker:${VERSION}"
+          docker push plazzari/lambda2docker:latest
